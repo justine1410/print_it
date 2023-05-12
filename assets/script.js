@@ -27,6 +27,7 @@ let dots = document.querySelector(".dots");
 dots.innerHTML=`${bullet.repeat(slides.length)}`;
 dots.firstChild.className= "dot dot_selected";
 
+
 // // fonction qui permet de gérer les dot
 let bulletSelected = 0;
 function ChangeDot(sens){
