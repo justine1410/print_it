@@ -130,7 +130,11 @@ header {
 	right: 10px;
 }
 /* Gestion des points du carrousel */
-.dots {
+
+.test{
+	display: flex;
+}
+.dots{
 	position: absolute;
 	bottom: 40px;
 	display: flex;
