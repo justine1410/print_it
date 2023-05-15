@@ -15,6 +15,7 @@ let slides = [
 		"image":"assets/images/slideshow/slide4.png",
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
+	
 
 ]
 
@@ -69,10 +70,13 @@ function ChangeSlide(sens){
 	document.querySelector(".texte").innerHTML= `${slides[numero].tagLine}`;	
 }
 
+setInterval("ChangeSlide(1)", 4000);
+
 // Initilisation de l'affichage par rapport au tableau
 
 let left = document.querySelector(".arrow_left");
 let right = document.querySelector('.arrow_right')
+
 
 
 left.addEventListener("click",()=>{
@@ -81,7 +85,7 @@ left.addEventListener("click",()=>{
 })
 
 right.addEventListener("click",()=>{
-	ChangeSlide(1);
+	ChangeSlide(-1);
 	ChangeDot(1)
 
 })
