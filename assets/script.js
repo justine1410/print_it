@@ -71,6 +71,8 @@ function ChangeSlide(sens){
 }
 
 setInterval("ChangeSlide(1)", 4000);
+setInterval("ChangeDot(1)", 4000);
+
 
 // Initilisation de l'affichage par rapport au tableau
 
